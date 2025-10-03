@@ -1,2 +1,7 @@
-{{/* Disable site icon usage by returning empty permalinks. */}}
-{{ return (dict "RelPermalink" "" "Permalink" "") }}
+{{/* Return site icon resource resized to requested square size. */}}
+{{ $icon := resources.GetMatch "media/icon.png" }}
+{{ $icon_resized := dict "RelPermalink" "" "Permalink" "" }}
+{{ if $icon }}
+  {{ $icon_resized = $icon.Fill (printf "%sx%s Center" (string .) (string .)) }}
+{{ end }}
+{{ return $icon_resized }}
