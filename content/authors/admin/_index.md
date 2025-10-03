@@ -1,20 +1,21 @@
----
+﻿---
 # Display name
-title: Alex Johnson
+title: |-
+  Fangping Wan<br>(万 方平)
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Wan
+last_name: Fangping
 
 # Pronouns (optional)
 pronouns: he/him
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: "😄"
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,83 +24,99 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Computational Scientist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: University of Pennsylvania
+    url: https://delafuentelab.seas.upenn.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:Fangping.Wan@Pennmedicine.upenn.edu'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
-  - icon: brands/github
-    url: https://github.com/alexjohnsonai
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
+    url: https://scholar.google.com/citations?user=-_X99PYAAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0000-0003-1647-3278
+  #- icon: brands/x
+  #  url: https://twitter.com/AlexAIResearch
+  - icon: brands/github
+    url: https://github.com/FangpingWan
+  #- icon: brands/linkedin
+  #  url: https://www.linkedin.com/in/alexjohnsonai/
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
-
-education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    date_start: 2015-09-01
-    date_end: 2019-06-30
-    summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    date_start: 2013-09-01
-    date_end: 2015-05-31
-    summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+  - AI4Science
+  - Deep Learning
+  - Generative AI
+  - Large Language Model
+  - Graph Neural Network
+  - Drug Discovery
+  - Computational Biology
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: Computational Scientist
+    company_name: University of Pennsylvania, Philadelphia, PA, US
+    company_url: 'https://delafuentelab.seas.upenn.edu/'
+    Supervisor: Dr. César de la Fuente
     company_logo: ''
-    date_start: 2020-01-01
+    date_start: 2024-08-17
     date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+    #summary: |2-
+    #  Leading research on multimodal AI systems. Contributed to Llama 2 and other #open-source models. 50+ citations in 3 years.
+  - position: Postdoctoral Researcher
+    company_name: University of Pennsylvania, Philadelphia, PA, US
+    company_url: 'https://delafuentelab.seas.upenn.edu/'
+    Supervisor: Dr. César de la Fuente
     company_logo: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+    date_start: 2021-08-17
+    date_end: 2024-08-16
+    #summary: |
+    #  Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+
+  - position: Machine Learning Engineer
+    company_name:  Silexon AI Technology, Beijing, China
+    #company_url: 'https://delafuentelab.seas.upenn.edu/'
+    #company_logo: ''
+    date_start: 2020-07-01
+    date_end: 2021-07-01
+
+education:
+  - area: PhD in Computer Science
+    institution: Tsinghua University, Beijing, China
+    Supervisor: Dr. Jianyang Zeng
+    date_start: 2015-09-01
+    date_end: 2020-06-30
+    #summary: |
+    #  Thesis: Machine Learning Methods for Predicting Drug-Target Interactions and Synthetic Lethality. Supervised by Jianyang Zeng.
+    #button:
+    #  text: 'Read Thesis'
+    #  url: 'https://example.com/thesis.pdf'
+  #- area: MS Computer Science
+  #  institution: Carnegie Mellon University
+  #  date_start: 2013-09-01
+  #  date_end: 2015-05-31
+  #  summary: |
+  #    GPA: 4.0/4.0
+
+  #    Specialized in machine learning and robotics.
+  - area: BS in Computer Science
+    institution: Tianjin University, Tianjin, China
+    date_start: 2011-09-01
+    date_end: 2015-06-30
+    #summary: |
+    #  GPA: 3.85/4.0
+
+    #  Minored in Mathematics. President of AI Club.
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
+
+
 skills:
   - name: Technical Skills
     items:
@@ -132,11 +149,11 @@ skills:
         percent: 70
         icon: book-open
 
-languages:
-  - name: English
-    percent: 100
-  - name: Spanish
-    percent: 50
+#languages:
+#  - name: English
+#    percent: 100
+#  - name: Spanish
+#    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -166,4 +183,4 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+Fangping Wan is a computational scientist in the Machine Biology Group led by Dr. César de la Fuente at the University of Pennsylvania. His research lies broadly in the area of AI for Science, with a focus on applying advanced machine learning approaches to challenges in biomolecular modeling and drug discovery. He integrates large language models, graph neural networks, and generative AI frameworks to model protein sequences, molecular structures, and biological interactions. By combining predictive analysis with generative design, his work explores new ways to understand molecular function and to accelerate the identification of promising therapeutic candidates. Positioned at the intersection of computational biology, artificial intelligence, and biomedical engineering, his research brings together method development and domain exploration, contributing to a broader view of how AI can support advances in biology and chemistry.

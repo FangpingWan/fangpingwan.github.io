@@ -1,0 +1,18 @@
+﻿{{/* Custom footer without attribution */}}
+{{ $page := .Page }}
+{{ $i18n_licensed_under := i18n "licensed_under" }}
+{{ $license := site.Params.footer.copyright.license | default (dict) }}
+{{ $notice := site.Params.footer.copyright.notice }}
+
+<footer class="site-footer py-10 text-center text-sm text-zinc-500 dark:text-zinc-400">
+  <div class="container mx-auto px-6">
+    <div class="space-y-2">
+      {{ with $notice }}
+        <div>{{ . | markdownify }}</div>
+      {{ end }}
+      {{ if and ($license.enable | default false) $license.url }}
+        <div>{{ printf "%s <a href=\"%s\" rel=\"noopener\">%s</a>" $i18n_licensed_under $license.url ($license.name | default "") | safeHTML }}</div>
+      {{ end }}
+    </div>
+  </div>
+</footer>

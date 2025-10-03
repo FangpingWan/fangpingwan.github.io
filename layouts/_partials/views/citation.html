@@ -1,0 +1,25 @@
+﻿{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ with $item.Params.external_link }}
+  {{ $link = . }}
+{{ end }}
+<div class="pub-list-item view-citation border border-zinc-200 dark:border-zinc-700 rounded-2xl p-6 shadow-sm space-y-2">
+  <div class="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-2">
+    <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 flex-1">
+      {{ if $item.Params.external_link }}
+        <a href="{{ $link }}" target="_blank" rel="noopener noreferrer">{{ $item.Title }}</a>
+      {{ else }}
+        <a href="{{ $link }}">{{ $item.Title }}</a>
+      {{ end }}
+    </h3>
+    <div class="text-sm italic text-primary-600 dark:text-primary-400 lg:text-right">{{ $item.Params.publication | markdownify }}</div>
+  </div>
+  {{ $authors := $item.Params.authors }}
+  {{ if $authors }}
+  <div class="text-sm text-zinc-500 dark:text-zinc-300">
+    {{ range $index, $author := $authors }}
+      {{ if $index }}, {{ end }}{{ if or (eq $author "Fangping Wan") (eq $author "Fangping Wan*") }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

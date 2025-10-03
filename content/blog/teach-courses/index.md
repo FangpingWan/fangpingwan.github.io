@@ -1,5 +1,5 @@
----
-title: 👩🏼‍🏫 Teach academic courses
+﻿---
+title: "Teach academic courses"
 summary: Embed videos, podcasts, code, LaTeX math, and even test students!
 date: 2023-10-24
 math: true
@@ -10,30 +10,30 @@ tags:
   - Hugo Blox Builder
   - Markdown
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: "Embed rich media such as videos and LaTeX math"
 ---
 
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 
 **Embed videos, podcasts, code, LaTeX math, and even test students!**
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+On this page, you''ll find some examples of the types of technical content that can be rendered with Hugo Blox.
 
 ## Citation
 
-Here's an example of citing a publication using the cite shortcode:
+Here''s an example of citing a publication using the cite shortcode:
 
-{{< cite page="/publications/preprint" view="citation" >}}
+{{< cite page="/publications/pub-12-acme-pan-specific-peptide-mhc-class-i-binding-prediction-through-attention-based" view="citation" >}}
 
 You can also use the default view by omitting the view parameter:
 
-{{< cite page="/publications/conference-paper" >}}
+{{< cite page="/publications/pub-01-neodti-neural-integration-of-neighbor-information-from-a-heterogeneous-network-f" >}}
 
 ## Video
 
 Teach your course by sharing videos with your students. Choose from one of the following approaches:
 
-**Youtube**:
+**YouTube**:
 
     {{</* youtube D2vj0WcvH5c */>}}
 
@@ -43,16 +43,17 @@ Teach your course by sharing videos with your students. Choose from one of the f
 
     {{</* bilibili BV1WV4y1r7DF */>}}
 
+{{< bilibili BV1WV4y1r7DF >}}
 
 **Video file**
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page''s folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
 
     {{</* video src="my_video.mp4" controls="yes" */>}}
 
 ## Podcast
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+You can add a podcast or music to a page by placing the MP3 file in the page''s folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
 
     {{</* audio src="ambient-piano.mp3" */>}}
 
@@ -65,18 +66,18 @@ Try it out:
 Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
 
 ```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
+{{</* spoiler text="Click to view the solution" */>}}
 You found me!
 {{</* /spoiler */>}}
 ```
 
 renders as
 
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
+{{< spoiler text="Click to view the solution" >}}You found me!{{< /spoiler >}}
 
 ## Math
 
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the `math: true` option in your page's front matter, or enable math for your entire site by toggling math in your `config/_default/params.yaml` file:
+Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the `math: true` option in your page''s front matter, or enable math for your entire site by toggling math in your `config/_default/params.yaml` file:
 
 ```yaml
 features:
@@ -116,31 +117,17 @@ $$
 
 ## Code
 
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
+Hugo Blox Builder utilises Hugo''s Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
 
 ```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
+# Example of code highlighting
+import math
+
+radius = 2.5
+area = math.pi * radius ** 2
+print(f"Circle area: {area:.2f}")
 ```
 
-## Inline Images
+---
 
-```go
-{{</* icon name="python" */>}} Python
-```
-
-renders as
-
-{{< icon name="python" >}} Python
-
-## Did you find this page helpful? Consider sharing it 🙌
+This concludes the overview of multimedia options for course pages created with Hugo Blox.
