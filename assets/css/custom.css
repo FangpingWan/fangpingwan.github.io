@@ -201,3 +201,8 @@ body {
     radial-gradient(at 75% 85%, hsla(30, 35%, 15%, 1) 0px, transparent 50%);
 }
 
+
+#hbx-dev-hud-root {
+  display: none !important;
+}
+
